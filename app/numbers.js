@@ -3,7 +3,7 @@ let one = 10;
 let two = '8';
 let three = 1;
 
-let sum;
+let sum = one + two + three;
 
 
 // ------------------------------------------
@@ -15,7 +15,6 @@ let threes = []
 
 
 
-
 // ------------------------------------------
 
 
@@ -24,7 +23,16 @@ let threes = []
 let scores = [88, 84, 100, 92, 70, 76, 76, 84, 86, 98];
 
 
-let average;
+let average = 0;
 
 
 // code below
+debugger
+function findAverage(scores) {
+  let average = 0
+  let d = scores.length
+  for (let i = 0; i < scores.length; i++) {
+    average += scores[i]
+  }
+  return average / d
+}
